@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flexbox in Bootstrap D-Flex</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .col{
+            min-height: 40vh;
+        }
+        .class{
+            min-height: 100vh;
+            background: lightcoral;
+        }
+        .x{
+            height: 30vh;/*Necessary for the vertical alignment*/
+            /********************************************************/
+            display: flex;
+            /*display: inline-flex;*/
+            /********************************************************/
+            flex-direction: row;/*Default*/
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+            /********************************************************/
+            /*flex-wrap: nowrap;*//*Default*/
+            flex-wrap: wrap;
+            /*flex-wrap: wrap-reverse;*/
+            /********************************************************/
+            /*justify-content: flex-start;*//*Default*/
+            /*justify-content: flex-end;*/
+            justify-content: center;
+            /*justify-content: space-between;*/
+            /*justify-content: space-around;*/
+            /*justify-content: space-evenly;*/
+            /********************************************************/
+            /*align-items: stretch;*//*Default*/
+            /*align-items: flex-start;*/
+            /*align-items: flex-end;*/
+            align-items: center;
+            /*align-items: baseline;*/
+            /********************************************************/
+            /*align-content: stretch;*//*Default*/
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container x">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <!-- <div class="box generic">Generic</div>
+        <div class="box generic">Generic</div>
+        <div class="box generic">Generic</div>
+        <div class="box generic">Generic</div> -->
+    </div>
+    <br>
+    <br>
+    <!-- flexbox in bootstrap -->
+    <!-- D-FLEX -->
+    <!-- Justify-content horizontally -->
+    <!-- align-items vertically *Div must have a height value-->
+    <!-- only direct children -->
+    <div class="container">
+        <div class="row">
+            <div class="col bg-danger d-flex justify-content-around align-items-center">
+                <p class="bg-warning align-self-start">Hello World</p>
+                <p class="bg-info">Hello World</p>
+                <p class="bg-success">Hello World</p>
+                <p class="bg-dark text-white align-self-end">Hello World</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-9 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis voluptatibus, laboriosam quam quo alias
+                necessitatibus nisi eaque doloremque voluptas nobis ab sed vel cumque eveniet eius officia magni aliquid, deleniti sint
+                odio vero rerum? Illo autem praesentium quibusdam neque, veritatis nam saepe, nisi, delectus doloremque minus laudantium
+                ad eius.
+            </div>
+        </div>
+        <div class="row justify-content-center class align-items-center">
+            <div class="col-9">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis voluptatibus, laboriosam quam quo alias
+                necessitatibus nisi eaque doloremque voluptas nobis ab sed vel cumque eveniet eius officia magni aliquid, deleniti sint
+                odio vero rerum? Illo autem praesentium quibusdam neque, veritatis nam saepe, nisi, delectus doloremque minus laudantium
+                ad eius.
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>

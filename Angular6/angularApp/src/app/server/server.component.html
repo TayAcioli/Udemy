@@ -1,0 +1,12 @@
+<!--<p  [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{'success': serverStatus === 'Online'}"
+    class="alert col-xs-1">
+        Server with ID {{ serverId }} is {{ getServerStatus() }}
+</p>-->
+<div class="col-xs-6">
+    <p  [class.alert-success]="serverStatus === 'Online'"
+        [class.alert-danger]="serverStatus === 'Offline'"
+        class="alert col-xs-5">
+            Server with ID {{ serverId }} is {{ getServerStatus() }}
+    </p>
+</div>

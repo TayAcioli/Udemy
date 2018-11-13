@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="container">
+      <hr>
+      <div class="row">
+          <app-game (intervalFired)="onIntervalFired($event)"></app-game>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6">
+          <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+        </div>
+        <div class="col-lg-6">
+          <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
