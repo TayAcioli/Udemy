@@ -46,14 +46,70 @@
             /*align-items: baseline;*/
             /********************************************************/
             /*align-content: stretch;*//*Default*/
+            /* align-content: flex-start;*/
+            /*align-content: flex-end; */
+            /*align-content: center;*/
+            align-content: space-around;
+            /*align-content: space-between;*/
+        }
+        .y{
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            border: 5px solid red;
+            justify-content: center;
+            align-items: center;
+        }
+        .y-2{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            border: 5px solid blue;
+            /*align-items: center;*/
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .a{
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            border: 5px solid red;
+            align-items: center;
+        }
+        .a-i{
+            order: 11; /*0 is the default value */
+        }
+        .b{
+            flex-grow: 1;
         }
     </style>
   </head>
   <body>
-    <div class="container x">
+    <div class="container a">
+        <div class="box box-1 b a-i">1</div>
+        <div class="box box-2 b">2</div>
+        <div class="box box-3 b">3</div>
+        <div class="box box-4 b">4</div>
+        <div class="box box-5 b">5</div>
+    </div>
+    <div class="container y">
         <div class="box box-1">1</div>
         <div class="box box-2">2</div>
         <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+    </div>
+    <div class="container y-2">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+    </div>
+    <div class="container x">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3" style="font-size: 60px;">3</div>
         <div class="box box-4">4</div>
         <div class="box box-5">5</div>
         <!-- <div class="box generic">Generic</div>
