@@ -1,0 +1,21 @@
+body{
+    padding: 20px;
+    background: #fafafa;
+    position: relative;
+}
+p{
+    display: inline-flex;
+}
+.mdl-card--width{
+    width: 35vw;
+}
+.mdl-card--img{
+    height: 40vh;
+    color: white;
+}
+.mdl-card--img-url-1{
+    background: url(./lib/img/sample-1.jpg) center / cover;
+}
+.mdl-card--img-url-2{
+    background: url(./lib/img/sample-2.jpg) center / cover;
+}
