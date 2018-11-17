@@ -167,7 +167,57 @@
     </div>
     <div>
         <h1>Material Design Progress Bars</h1>
+        <!-- Inderteminate Progress Bar -->
+        <p>Inderteminate Progress Bar</p>
         <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+        <br/>
+        <!-- Default Progress Bar -->
+        <p>Default Progress Bar</p>
+        <!-- Requires js -->
+        <div id="mdl-progress-1" class="mdl-progress mdl-js-progress"></div>
+        <br/>
+        <!-- Buffering progress Bar -->
+        <p>Buffering progress Bar</p>
+        <!-- Requires Js -->
+        <div id="mdl-progress-2" class="mdl-progress mdl-js-progress"></div>
+        <br/>
     </div>
+    <div>
+        <!-- Class is-active must be inserted and removed trough code -->
+        <!-- otherwise spinner will be always showing -->
+        <h1>Material Design Spinners</h1>
+        <!-- Default Spinner -->
+        <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        <!-- Single Color Spinner -->
+        <div class="mdl-spinner mdl-js-spinner mdl-spinner--single-color is-active" style="margin-right: 20px;"></div>
+        <!-- Funny things that happens with spinners -->
+        <div class="mdl-spinner mdl-js-spinner is-active">lol</div>
+    </div>
+    <div>
+        <h1>Material Design Menus</h1>
+        <!-- Menu Dropdown position can be changed -->
+        <!-- Regular menu icon -->
+        <button id="mdl-menu-1" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">menu</i>
+        </button>
+        <!-- Regular menu list -->
+        <ul class="mdl-menu mdl-js-menu" for="mdl-menu-1">
+            <li class="mdl-menu__item">1</li>
+            <li class="mdl-menu__item">2</li>
+            <li class="mdl-menu__item">3</li>
+        </ul>
+        <!-- Regular more icon -->
+        <button id="mdl-menu-2" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+        </button>
+        <!-- Ripple Effect menu list -->
+        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--top-left" for="mdl-menu-2">
+            <li class="mdl-menu__item">Cats</li>
+            <li class="mdl-menu__item">Dogs</li>
+            <li class="mdl-menu__item">Hamsters</li>
+        </ul>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
