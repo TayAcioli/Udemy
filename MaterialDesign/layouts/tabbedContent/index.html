@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../lib/css/material.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="../../lib/js/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- Layout container -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- Header -->
+        <header class="mdl-layout__header">
+            <!-- Header Row -->
+            <div class="mdl-layout__header-row">
+                <!-- Header title -->
+                <span class="mdl-layout-title">This is the Title</span>
+                <!-- Header Spacer -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Header Navigation Links -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a href="../transparent/index.html"      class="mdl-navigation__link">Transparent Layout</a>
+                    <a href="../fixedHeader/index.html"      class="mdl-navigation__link">Fixed Header Layout</a>
+                    <a href="../scrolingHeader/index.html"   class="mdl-navigation__link">Scrolling Header Layout</a>
+                    <a href="../waterfall/index.html"        class="mdl-navigation__link">Waterfall Layout</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Drawer -->
+        <div class="mdl-layout__drawer">
+            <!-- Drawer Title -->
+            <span class="mdl-layout-title">This is the Title</span>
+            <!-- Drawer Navigation Links -->
+            <nav class="mdl-navigation">
+                <a href="../fixedDrawer/index.html"      class="mdl-navigation__link">Fixed Drawer Layout</a>
+                <a href="../fixedHeader/index.html"      class="mdl-navigation__link">Fixed Header Layout</a>
+                <a href="../fixedHeaderDrawer/index.html"class="mdl-navigation__link">Fixed Header and Drawer Layout</a>
+                <a href="../responsiveGrid/index.html"   class="mdl-navigation__link">Responsive Grid Layout</a>
+                <a href="../scrolingHeader/index.html"   class="mdl-navigation__link">Scrolling Header Layout</a>
+                <a href="../tabbed/index.html"           class="mdl-navigation__link">Tabbed Layout</a>
+                <a href="../tabbedContent/index.html"    class="mdl-navigation__link">Tabbed Content Layout</a>
+                <a href="../transparent/index.html"      class="mdl-navigation__link">Transparent Layout</a>
+                <a href="../waterfall/index.html"        class="mdl-navigation__link">Waterfall Layout</a>
+            </nav>
+        </div>
+
+        <!-- Content -->
+        <main class="mdl-layout__content">
+            <!-- Tab Section -->
+            <div class="mdl-tabs mdl-js-tabs">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#colors" class="mdl-tabs__tab is-active">Colors</a>
+                    <a href="#names" class="mdl-tabs__tab">Names</a>
+                    <a href="#genders" class="mdl-tabs__tab">Genders</a>
+                </div>
+                <div class="mdl-tabs__panel is-active" id="colors">
+                    <ul>
+                        <li>Black</li>
+                        <li>White</li>
+                        <li>Blue</li>
+                        <li>Green</li>
+                    </ul>
+                </div>
+                <div class="mdl-tabs__panel" id="names">
+                    <ul>
+                        <li>Tay</li>
+                        <li>Yuri</li>
+                        <li>Chris</li>
+                        <li>Jeff</li>
+                    </ul>
+                </div>
+                <div class="mdl-tabs__panel" id="genders">
+                    <ul>
+                        <li>Male</li>
+                        <li>Female</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

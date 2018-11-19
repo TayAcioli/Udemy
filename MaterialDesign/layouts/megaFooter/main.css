@@ -1,0 +1,11 @@
+.container{
+    max-width: 90vw;
+    min-height: 90vh;
+    background: #f2f2f2;
+}
+.content-padding-20-px{
+    padding: 8px;
+}
+.mdl-mega-footer a:hover{
+    color: white;
+}
