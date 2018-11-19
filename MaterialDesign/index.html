@@ -211,11 +211,139 @@
             <i class="material-icons">more_vert</i>
         </button>
         <!-- Ripple Effect menu list -->
-        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--top-left" for="mdl-menu-2">
+        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="mdl-menu-2">
             <li class="mdl-menu__item">Cats</li>
             <li class="mdl-menu__item">Dogs</li>
             <li class="mdl-menu__item">Hamsters</li>
         </ul>
+    </div>
+    <div>
+        <h1>Material Design Sliders</h1>
+        <!-- Requires Extra Classes for the paragraph -->
+        <p class="mdl-slider-width">
+            <input type="range" class="mdl-slider mdl-js-slider" min="0" max="50" value="25" step="2">
+        </p>
+    </div>
+    <div>
+        <h1>Material Design Toggles</h1>
+        <!-- Checkbox -->
+        <!-- The only optional class is the ripple effect -->
+        <label for="mdl-checkbox-1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+            <input id="mdl-checkbox-1" type="checkbox" class="mdl-checkbox__input"/>
+            <span class="mdl-checkbox__label">Checkbox</span>
+        </label>
+        <!-- Radio Button -->
+        <label for="mdl-radio-1" class="mdl-radio mdl-js-radio mdl-js-ripple-effect" style="margin-top:10px;">
+            <input id="mdl-radio-1" name="mdl-radio" type="radio" class="mdl-radio__button"/>
+            <span class="mdl-radio__label">Radio 1</span>
+        </label>
+        <label for="mdl-radio-2" class="mdl-radio mdl-js-radio" style="margin-top:10px;">
+            <input id="mdl-radio-2" name="mdl-radio" type="radio" class="mdl-radio__button"/>
+            <span class="mdl-radio__label">Radio 2</span>
+        </label>
+        <!-- Toggle Switch -->
+        <label for="mdl-switch-1" class="mdl-switch mdl-js-switch" style="margin-top:10px;">
+            <input type="checkbox" name="mdl-switch-1" id="mdl-switch-1" class="mdl-switch__input"/>
+            <span class="mdl-switch__label">Optional Text</span>
+        </label>
+        <!-- Icon Toggle -->
+        <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1" style="margin-top:10px;">
+          <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+          <span class="mdl-icon-toggle__label material-icons">mood</span>
+        </label>
+    </div>
+    <div>
+        <h1>Material Design Text Fields</h1>
+        <!-- To add floating label all you got to do is add the class mdl-textfield--floating-label -->
+        <!-- Textfield -->
+        <div class="mdl-textfield mdl-js-textfield">
+            <input type="text" name="textfield-1" id="textfield-1" class="mdl-textfield__input">
+            <label for="textfield-1" class="mdl-textfield__label">Text...</label>
+        </div>
+        <br/>
+        <!-- Number Only Field -->
+        <div class="mdl-textfield mdl-js-textfield">
+            <input type="text" name="number-1" id="number-1" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?">
+            <label for="number-1" class="mdl-textfield__label">Number...</label>
+            <span class="mdl-textfield__error">Input is not a number</span>
+        </div>
+        <br/>
+        <!-- Textfield with floating label -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="textfield-2" name="textfield-2"/>
+            <label class="mdl-textfield__label" for="textfield-2">Text...</label>
+        </div>
+        <br/>
+        <!-- Number Only Field with floating label -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input type="text" name="number-2" id="number-2" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?">
+            <label for="number-2" class="mdl-textfield__label">Number...</label>
+            <span class="mdl-textfield__error">Input is not a number</span>
+        </div>
+        <br/>
+        <!-- Text Area Field -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <textarea class="mdl-textfield__input" type="text" id="textarea-1" rows="5"></textarea>
+            <label class="mdl-textfield__label" for="textarea-1">Text Area...</label>
+        </div>
+        <br/>
+        <!-- Expandable Input Field -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="expandable-1">
+                <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="expandable-1" id="expandable-1"/>
+                <label class="mdl-textfield__label" for="expandable-1">Expandable Input</label>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom:50px;">
+        <h1>Material Design Tooltips</h1>
+        <!-- Text Tooltips (Large) -->
+        <div class="material-icons" id="print-tooltip" style="margin-left:50px;">
+            print
+        </div>
+        <div for="print-tooltip" class="mdl-tooltip mdl-tooltip--large">Print</div>
+        <!-- Icon Tooltip (Regular) -->
+        <div class="material-icons" id="add-tooltip" style="margin-left:50px;">add</div>
+        <div class="mdl-tooltip material-icons" for="add-tooltip">add</div>
+    </div>
+    <div>
+        <h1>Material Design Tables</h1>
+        <!-- Right Alignment by Default -->
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--6dp mdl-data-table--selectable">
+            <thead>
+                <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Food</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- class needed for left alignment -->
+                    <td class="mdl-data-table__cell--non-numeric">Cheese</td>
+                    <td>2</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Chicken</td>
+                    <td>5</td>
+                    <td>$3.90</td>
+                </tr>
+                <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Beef</td>
+                    <td>1</td>
+                    <td>$2.60</td>
+                </tr>
+                <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Ham</td>
+                    <td>3</td>
+                    <td>$1.30</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="./main.js"></script>

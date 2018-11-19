@@ -1,0 +1,6 @@
+.layout-container{
+    background: url(../../lib/img/sample-1.jpg) center / cover;
+}
+.mdl-navigation__link:hover{
+    color: lightgray;
+}
