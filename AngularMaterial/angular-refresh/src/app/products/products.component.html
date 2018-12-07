@@ -1,0 +1,29 @@
+<!-- Component Name -->
+<h1>My Products</h1>
+<!-- Two Way Binding -->
+<!-- Used on Inputs Usually -->
+<!-- NgModel must be imported on app.module -->
+<!-- ngIf allows us to conditionally render something -->
+<!-- <input *ngIf="!isDisabled" type="text" [(ngModel)]="productName"> -->
+<!-- Event Binding (click) -->
+<!-- Call a function or add a Short inline statements -->
+<!-- Property Binding [disabled] -->
+<!-- <button
+  (click)="productName = 'Car'"
+  [disabled]="isDisabled">
+    Change Name
+</button> -->
+<!-- <button
+  (click)="onAddProduct()"
+  *ngIf="!isDisabled">
+    Change Name
+</button> -->
+<!-- String Interpolation -->
+<!-- <div>{{ productName }}</div> -->
+<!-- (productClicked) => Event Listener, whenever the event that is bind to this property is emitted it will activate the function -->
+<!-- [productName] Property that it's sent to the other component trough @Input() -->
+<form (ngSubmit)="onAddProduct(f)" #f="ngForm">
+  <input type="text" ngModel name="productName" required>
+  <button type="submit"> Add Product </button>
+</form>
+<app-product (productClicked)="onRemoveProduct(product)" *ngFor="let product of products" [productName]="product"></app-product>
