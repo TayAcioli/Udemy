@@ -1,5 +1,5 @@
 <section>
-  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" #f="ngForm" (ngSubmit)="onSubmit(f)">
     <mat-form-field>
       <input
         type="email"
@@ -31,7 +31,10 @@
         placeholder="Date of Birth"
         [matDatepicker]="datePicker"
         [max]="maxDate"
-        [min]="minDate">
+        [min]="minDate"
+        ngModel
+        name="date"
+        required>
       <mat-datepicker-toggle
         matSuffix
         [for]="datePicker">
@@ -43,15 +46,16 @@
     <mat-checkbox
       ngModel
       name="terms"
-      value=""
       color="primary"
-      style="margin-bottom: 10px;">
+      required>
         I Agree to Terms and Conditions.
     </mat-checkbox>
     <button
       type="submit"
-      mat-raised-button color="primary"
-      (click)="onClick">
+      mat-raised-button
+      color="primary"
+      (click)="onClick"
+      [disabled]="f.invalid">
         Submit
     </button>
   </form>
