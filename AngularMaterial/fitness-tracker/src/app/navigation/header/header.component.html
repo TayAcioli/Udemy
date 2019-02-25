@@ -27,22 +27,22 @@
           fxLayoutGap="10px"
           class="navigationItems"
       >
-          <li>
+          <li *ngIf="!isAuth">
               <a routerLink="/signup">
                   Signup
               </a>
           </li>
-          <li>
+          <li *ngIf="!isAuth">
               <a routerLink="/login">
                   Login
               </a>
           </li>
-          <li>
+          <li *ngIf="isAuth">
               <a routerLink="/training">
                   Training
               </a>
           </li>
-          <li>
+          <li *ngIf="isAuth">
               <a href="#">
                   Logout
               </a>

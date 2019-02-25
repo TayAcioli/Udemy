@@ -11,7 +11,7 @@ import { StopTrainingComponent } from './stop-training.component';
 export class CurrentTrainingComponent implements OnInit {
   @Output() trainingExit = new EventEmitter();
   progress = 0;
-  timer:any;
+  timer: any;
 
   constructor(private dialog: MatDialog) { }
 
@@ -19,16 +19,16 @@ export class CurrentTrainingComponent implements OnInit {
     this.startOrResumeTimer();
   }
 
-  startOrResumeTimer():void {
+  startOrResumeTimer(): void {
     this.timer = setInterval(() => {
       this.progress = this.progress + 5;
-      if(this.progress >= 100) {
+      if (this.progress >= 100) {
         clearInterval(this.timer);
       }
     }, 1000);
   }
 
-  onStop():void {
+  onStop(): void {
     clearInterval(this.timer);
     const dialogRef = this.dialog.open(StopTrainingComponent, {
       data: {
@@ -37,7 +37,7 @@ export class CurrentTrainingComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if(result){
+      if (result) {
         this.trainingExit.emit();
       } else {
         this.startOrResumeTimer();
