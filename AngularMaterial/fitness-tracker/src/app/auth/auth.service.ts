@@ -39,7 +39,7 @@ export class AuthService {
   }
 
   isAuth(): boolean {
-    return this.user == null;
+    return Boolean(this.user);
   }
 
   authSuccessfully() {
